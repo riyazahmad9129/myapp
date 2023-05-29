@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:untitled3/login.dart';
+import 'package:untitled3/signup.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -21,11 +21,11 @@ class _SplashScreenState extends State<SplashScreen>
     _animationDouble =
         Tween(begin: 2.0, end: 1.0).animate(_animationController);
     _animationController.forward();
-    Timer(const Duration(seconds: 6), () {
+    Timer(const Duration(seconds: 5), () {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(
-          builder: (context) => const LoginScreen(),
+          builder: (context) => const SignUpScreen(),
         ),
       );
     });
