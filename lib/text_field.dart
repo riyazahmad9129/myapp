@@ -5,8 +5,7 @@ import 'theme.dart';
 
 class MyTextField extends StatelessWidget {
   final String? hintText;
-  final BorderRadius? borderRadius;
-  final Color? fillColor;
+
   final TextEditingController? controller;
   final String? Function(String?)? validator;
   final TextInputType? inputType;
@@ -17,8 +16,6 @@ class MyTextField extends StatelessWidget {
       {super.key,
       this.isObscure = false,
       this.hintText,
-      this.borderRadius,
-      this.fillColor,
       this.controller,
       this.validator,
       this.inputType,
@@ -40,16 +37,6 @@ class MyTextField extends StatelessWidget {
         decoration: InputDecoration(
           hintText: hintText,
           suffix: suffixWidget,
-          border: OutlineInputBorder(
-            borderSide: BorderSide.none,
-            borderRadius: borderRadius ??
-                const BorderRadius.only(
-                  topLeft: Radius.circular(15),
-                  topRight: Radius.circular(15),
-                ),
-          ),
-          filled: true,
-          fillColor: fillColor ?? MyTheme.primaryContainerLight,
         ),
       ),
     );

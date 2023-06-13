@@ -7,4 +7,8 @@ class MyTheme {
   static const Color primaryContainer = Color(0xFF1b0161);
   static const Color primaryContainerLight = Color(0xFFe6deff);
   static const Color blueLight = Color(0xFFB9E0FF);
+  static const Color primary1 = Color(0xFF1e319d);
+  static const Color primary2 = Color(0xFFfc5185);
+  static const Color primary3 = Color(0xFF364f6b);
+  static const Color primary4 = Color(0xFF3fc1c9);
 }
